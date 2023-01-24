@@ -12,6 +12,9 @@ header {
     padding: 25px;
     text-align: center;
     border-bottom: 2px solid #0B73D9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 /*Grid*/
