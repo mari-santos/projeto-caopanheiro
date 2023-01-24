@@ -25,13 +25,26 @@ header {
 .products-container {
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 31%;
-    display: inline-block;
+    display: flex;
     margin: 1% 1%;
     padding: 15px;
+    filter: grayscale(100%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card:hover {
+    background-size: 110%;
+    filter: grayscale(0%);
 }
 
 .product-image {
@@ -66,16 +79,17 @@ header {
     background-image: url(../img/dog6.jpg);
 }
 
-h3 {
+h2 {
     margin-bottom: 10px;
-    color: #00B7F0;
-    border-left: 5px solid #0B73D9;
+    color: #fff;
     padding-left: 7px;
     font-size: 24px;
 }
 
 .card p {
     margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .bold {
@@ -88,16 +102,30 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #00B7F0;
+    border: 2px solid #fff;
     color: #fff;
     padding: 15px;
     border-radius: 5px;
     transition: .5s;
+    width: 40%;
+    padding: 0.6rem 2rem;
+    position: absolute;
+    bottom: 25%;
 }
 
 .btn:hover {
-    background-color: #0B73D9;
+    background-color: #00B7F0;
+    border: 2px solid #00B7F0;
+    color: #fff;
 }
+
+.dog-name {
+    position: absolute;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
 
 /*Footer*/
 footer {
