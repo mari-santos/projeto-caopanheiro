@@ -17,8 +17,6 @@ header {
     z-index: 1;
 }
 
-/*Grid*/
-
 .container {
     background-color: #eee;
     min-height: 60vh;
